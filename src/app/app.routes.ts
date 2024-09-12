@@ -4,9 +4,11 @@ import { ServiciosComponent } from './pages/servicios/servicios.component';
 import { AcercaDeComponent } from './pages/acerca-de/acerca-de.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { VerclientesComponent } from './pages/clientes/verclientes/verclientes.component';
+import { AgregarclientesComponent } from './pages/clientes/agregarclientes/agregarclientes.component';
+import { AutenticacionComponent } from './auth/autenticacion/autenticacion.component';
 export const routes: Routes = [
     {
-        path: '#',  // cyal es el path
+        path: '',  // cyal es el path
           title: 'inicio',// el nombre de la pagina
           component: InicioComponent,   //componente como tal
 },
@@ -29,8 +31,19 @@ export const routes: Routes = [
 },
 
 {
-    path: 'Clientes',  // cyal es el path
+    path: 'cliente',  // cyal es el path
     title: 'clientes potenciales',// el nombre de la pagina
     component: VerclientesComponent,   //componente como tal
+},
+{
+    path: 'add-clientes',  // cyal es el path
+    title: 'Agregar clientes',// el nombre de la pagina
+    component: AgregarclientesComponent,   //componente como tal
+},
+
+{
+    path: 'login',  // cyal es el path o ruta
+    title: 'Autenticacion',// el nombre de la pagina
+    component: AutenticacionComponent,   //componente como tal
 }
 ];
